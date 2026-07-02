@@ -32,8 +32,13 @@ del fruits[0]
 print(fruits)
 
 #clear entire list
-fruits.clear()
-print(fruits)
+#fruits.clear()
+#print(fruits)
 
+#search if fruit exist in the fruit list
+print("water melon" in fruits)
+print("apple" in fruits)
 
-
+#Iterates or Loop
+for fruit in fruits:
+    print(fruit)
