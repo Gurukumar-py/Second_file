@@ -5,13 +5,31 @@
 # a = len(numbers)
 # print(a)
 # print(len(numbers))
-#========================================================
-#concatenate 2 lists
+#==========================================================
+#concatenate 2 lists / merge 2 list
 # list1 = [1,2,3]
 # list2 = [4,5,6]
-#
 # list3 = list1 + list2
 # print(list3)
+#Merge 2 List using 2 extend
+#list2.extend(list1)
+#print(list2)
+#Concatenate two lists index-wise
+# list1 = ["Guru", "shakar", "Guru"]
+# list2 = ("Kumar", "Guru", "Brahma")
+# result = [x + y for x, y in zip(list1, list2)]
+# print(result)
+#Concatenate two lists in the following order
+# list1 = ["Guru", "Shakar", "Guru"]
+# list2 = ("Kumar", "Guru", "Brahma")
+# result = [x + y for x in list1 for y in list2]
+# print(result)
+#Iterate both lists simultaneously
+numlist1 = ["A", "B", "C"]
+numlist2 = [1, 2, 3]
+for num, result in zip(numlist2, numlist1):
+    print(num, result)
+
 #============================================================
 #Repeat list
 # list4 = [5,6,7]
@@ -52,10 +70,28 @@
 # #print(numbers)
 # squares = [x*x for x in numbers]
 # print(squares)
-squares = []
-for item in range(1,5):
-    squares.append(item*item)
-print(squares)
+# squares = [] #empty table
+# for item in range(1,5):
+#     squares.append(item*item)
+# print(squares)
+#Cube each number in a list
+# numList = [2,3,4,6,1]
+# cube = [x**3 for x in numList]
+# print(cube)
+#Even number from the list
+# numList = [2,3,4,6,1]
+# evenList = [x for x in numList if x % 2 == 0]
+# print(evenList)
+# #odd
+# evenList = [x for x in numList if x % 2 != 0]
+# print(evenList)
+# #greater than 3
+# greatList = [x for x in numList if x > 3]
+# print(greatList)
+#remove negative number
+# Numbers = [-2,4,-4,6,7,9,-7]
+# negNum = [x for x in Numbers if x >= 0]
+# print(negNum)
 #===============================================================================
 #Access elements
 # numbers = [1,2,3,4,5,5,6]
@@ -114,10 +150,10 @@ print(squares)
 # print(dlist1)
 #=================================================================================
 #Remove all occurrences of a specific item from a list
-dlist2 = [2,4,6,1,5,3,2,5]
-item_remove = 2
-result = [item for item in dlist2 if item != item_remove]
-print(result)
+# dlist2 = [2,4,6,1,5,3,2,5]
+# item_remove = 2
+# result = [item for item in dlist2 if item != item_remove]
+# print(result)
 #===========================================================
 #interview question
 # x = 10
@@ -128,3 +164,21 @@ print(result)
 # print(result)
 # print(x)
 #============================================================================
+#Access Nested list/Matrix
+matrix = [
+    [4,6,1],
+    [1,2,3],
+    [6,7,8]
+]
+# print(matrix[0][1])
+# print(matrix[1][2])
+# print(matrix[2][0])
+# print(matrix[-1][-1]) #last element
+# matrix[2][2] = 25
+# print(matrix[2][2])
+#Flatten Nested List in Python / converting nested list into single list
+# flatlist = []
+# flatlist = [x for subtile1 in matrix for x in subtile1]
+# print(flatlist)
+#=====================================================================
+

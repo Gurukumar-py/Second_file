@@ -1,4 +1,4 @@
-#fruits = ["apple", "Banana","Mango"]
+fruits = ["apple", "Banana","Mango"]
 # print("print my fruits", fruits)
 # print(fruits[1])
 # print(fruits[0])
@@ -9,9 +9,12 @@
 #append
 # fruits.append("water melon")
 # print(fruits)
+#index
+index = fruits.index("Mango")
+print(index)
 # #insert
-# fruits.insert(1,"orange")
-# print(fruits)
+fruits.insert(index,"orange")
+print(fruits)
 
 #add multiple elements -> extend
 # fruits.extend(["papya", "pear"])
@@ -44,13 +47,13 @@
 #==============================================================
 #Remove empty strings from the list of strings
 #1st method
-fruits = ["apple", "", "banana", "", "mango"]
-result = []
-for item in fruits:
-    if item != "":
-        result.append(item)
-print(result)
-#2nd method same statement in one line
-result = [item for item in fruits if item != ""]
-print(result)
+# fruits = ["apple", "", "banana", "", "mango"]
+# result = []
+# for item in fruits:
+#     if item != "":
+#         result.append(item)
+# print(result)
+# #2nd method same statement in one line
+# result = [item for item in fruits if item != ""]
+# print(result)
 #==========================================================
