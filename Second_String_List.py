@@ -1,4 +1,4 @@
-fruits = ["apple", "Banana","Mango"]
+#fruits = ["apple", "Banana","Mango","papya"]
 # print("print my fruits", fruits)
 # print(fruits[1])
 # print(fruits[0])
@@ -10,16 +10,32 @@ fruits = ["apple", "Banana","Mango"]
 # fruits.append("water melon")
 # print(fruits)
 #index
-index = fruits.index("Mango")
-print(index)
-# #insert
-fruits.insert(index,"orange")
-print(fruits)
-
+# index = fruits.index("Mango")
+# print(index)
+# # #insert
+# fruits.insert(index,"orange")
+# print(fruits)
+#If item does not exist in the list, handle
+# item = "apple"
+# if item in fruits:
+#         print(item)
+#         index = fruits.index(item)
+#         fruits.insert(index,"grapes")
+#         print(fruits)
+# else:
+#         print("Item does not exist")
+#Exercise 23: Replace list’s item with new value if found
+fruits = ["apple", "Banana","Mango","papya"]
+item = "papya"
+if item in fruits:
+    index = fruits.index(item)
+    fruits.insert(index,"pomegranate")
+    print(fruits)
+else:
+    print("item not in fruits")
 #add multiple elements -> extend
 # fruits.extend(["papya", "pear"])
 # print(fruits)
-
 #remove
 # fruits.remove("grapes")
 # print(fruits)

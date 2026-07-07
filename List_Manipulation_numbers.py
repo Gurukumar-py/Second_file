@@ -14,17 +14,17 @@
 #Merge 2 List using 2 extend
 #list2.extend(list1)
 #print(list2)
-#Concatenate two lists index-wise
+#Exercise 17:Concatenate two lists index-wise
 # list1 = ["Guru", "shakar", "Guru"]
 # list2 = ("Kumar", "Guru", "Brahma")
 # result = [x + y for x, y in zip(list1, list2)]
 # print(result)
-#Concatenate two lists in the following order
+#CExercise 18:Concatenate two lists in the following order
 # list1 = ["Guru", "Shakar", "Guru"]
 # list2 = ("Kumar", "Guru", "Brahma")
 # result = [x + y for x in list1 for y in list2]
 # print(result)
-#Iterate both lists simultaneously
+#Exercise 19: Iterate both lists simultaneously
 numlist1 = ["A", "B", "C"]
 numlist2 = [1, 2, 3]
 for num, result in zip(numlist2, numlist1):
@@ -165,20 +165,29 @@ for num, result in zip(numlist2, numlist1):
 # print(x)
 #============================================================================
 #Access Nested list/Matrix
-matrix = [
-    [4,6,1],
-    [1,2,3],
-    [6,7,8]
-]
+# matrix = [
+#     [4,6,1],
+#     [1,2,3],
+#     [6,7,8]
+# ]
+#Exercise 15: Access Nested Lists
 # print(matrix[0][1])
 # print(matrix[1][2])
 # print(matrix[2][0])
 # print(matrix[-1][-1]) #last element
 # matrix[2][2] = 25
 # print(matrix[2][2])
-#Flatten Nested List in Python / converting nested list into single list
+#Exercise 16: Flatten Nested List in Python / converting nested list into single list
 # flatlist = []
 # flatlist = [x for subtile1 in matrix for x in subtile1]
 # print(flatlist)
+#Exercise 22: Extend nested list by adding the sublist
+matrix = [
+    [4,6,1],
+    [1,2,3],
+    [6,7,8]
+]
+matrix.append([5,2,9])
+print(matrix)
 #=====================================================================
 
