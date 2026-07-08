@@ -7,13 +7,17 @@
 # print(len(numbers))
 #==========================================================
 #concatenate 2 lists / merge 2 list
-# list1 = [1,2,3]
-# list2 = [4,5,6]
+list1 = [1,2,3]
+list2 = [4,5,6,8]
 # list3 = list1 + list2
 # print(list3)
-#Merge 2 List using 2 extend
-#list2.extend(list1)
-#print(list2)
+# print(type(list3[0]))
+list3 = list(zip(list1, list2))
+# print(list3)
+# print(type(list3[0]))
+# #Merge 2 List using 2 extend
+# list1.extend(list2)
+# print(list1)
 #Exercise 17:Concatenate two lists index-wise
 # list1 = ["Guru", "shakar", "Guru"]
 # list2 = ("Kumar", "Guru", "Brahma")
@@ -25,10 +29,10 @@
 # result = [x + y for x in list1 for y in list2]
 # print(result)
 #Exercise 19: Iterate both lists simultaneously
-numlist1 = ["A", "B", "C"]
-numlist2 = [1, 2, 3]
-for num, result in zip(numlist2, numlist1):
-    print(num, result)
+# numlist1 = ["A", "B", "C"]
+# numlist2 = [1, 2, 3]
+# for num, result in zip(numlist2, numlist1):
+#     print(num, result)
 
 #============================================================
 #Repeat list
