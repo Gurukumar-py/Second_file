@@ -116,14 +116,37 @@ office2 = {
 # print(office3)
 
 #Count Character Frequencies in Dictionary
-# text = "programming"
-# result = {}
-#
-# for char in test:
-#     if char in result:
-#         result[char] += 1
-#     else:
-#         result[char] = 1
-# print(result)
+text = "programming"
+result = {}
+
+for char in text:
+    if char in result:
+        result[char] += 1
+    else:
+        result[char] = 1
+#print(result)
 #=========================================================================================================
-#Count Character Frequencies in Dictionary
+#Initialize dictionary with default values
+# keyList = ["name", "Hero", "Brahma", "School"]
+# #resultlist= {}
+# resultlist = dict.fromkeys(keyList, "N/A")
+# print(resultlist)
+# resultlist = dict.fromkeys(keyList, 55)
+# print(resultlist)
+#==========================================================================
+dict1 = {"arun": 33, "c": 25}
+dict2 = {"b": 22, "d": 27}
+dict1.update(dict2)
+#print(dict1)
+#==========================================================================
+#Create a dictionary by extracting the keys from a given dictionary
+collage = {
+    "name" : "PSE",
+    "student" : "Guru"
+}
+collage2 = {
+    "KVGC" : "Sullia",
+    "Royal" : "collage"
+}
+collage3 = dict.fromkeys(collage,collage2)
+print(collage3)

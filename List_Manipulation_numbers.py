@@ -192,6 +192,11 @@ matrix = [
     [6,7,8]
 ]
 matrix.append([5,2,9])
-print(matrix)
+#print(matrix)
 #=====================================================================
+#replace the negative number with the zero
+numbers = [-5, 10, -2, 8, 0, 15]
+result = [0 if x < 0 else x for x in numbers]
+print(result)
+#======================================================
 
