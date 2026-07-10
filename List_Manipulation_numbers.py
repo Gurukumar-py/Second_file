@@ -197,6 +197,9 @@ matrix.append([5,2,9])
 #replace the negative number with the zero
 numbers = [-5, 10, -2, 8, 0, 15]
 result = [0 if x < 0 else x for x in numbers]
-print(result)
+#print(result)
 #======================================================
-
+#repeating a list
+numbers3 = [-5, 10, -2, 8, 0, 15]
+print(numbers3*3)
+#==================================================
