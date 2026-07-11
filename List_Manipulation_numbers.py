@@ -40,14 +40,14 @@ list3 = list(zip(list1, list2))
 # print(list4 * 3)
 #=============================================================
 #Sort/assending/descending
-#array = [10,20,40,14,81,1]
+array = [10,20,40,14,81,1]
 # array.sort() #arrange in ascending order
 # print(array)
-# print(array.pop(3)) #remove/pop 81 (last number in array)
-# print(array)
+print(array.pop(3)) #remove/pop 81 (last number in array)
+print(array)
 # #descending order
-#array.reverse() #reverse
-#print(array)
+array.reverse() #reverse
+print(array)
 # array.sort(reverse=True)#descending order
 # print(array)
 #=================================================================
@@ -168,7 +168,7 @@ list3 = list(zip(list1, list2))
 # print(result)
 # print(x)
 #============================================================================
-#Access Nested list/Matrix
+#Access Nested list /Matrix
 # matrix = [
 #     [4,6,1],
 #     [1,2,3],
@@ -201,5 +201,11 @@ result = [0 if x < 0 else x for x in numbers]
 #======================================================
 #repeating a list
 numbers3 = [-5, 10, -2, 8, 0, 15]
-print(numbers3*3)
+#print(numbers3*3)
 #==================================================
+#Swap two list in Python
+swapTup1 = [10,20,40]
+swapTup2 = [20,50,60]
+swapTup1, swapTup2 = swapTup2, swapTup1
+#print(swapTup1)
+#print(swapTup2)
