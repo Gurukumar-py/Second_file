@@ -43,11 +43,11 @@ list3 = list(zip(list1, list2))
 array = [10,20,40,14,81,1]
 # array.sort() #arrange in ascending order
 # print(array)
-print(array.pop(3)) #remove/pop 81 (last number in array)
-print(array)
+#print(array.pop(3)) #remove/pop 81 (last number in array)
+#print(array)
 # #descending order
 array.reverse() #reverse
-print(array)
+#print(array)
 # array.sort(reverse=True)#descending order
 # print(array)
 #=================================================================
@@ -169,11 +169,11 @@ print(array)
 # print(x)
 #============================================================================
 #Access Nested list /Matrix
-# matrix = [
-#     [4,6,1],
-#     [1,2,3],
-#     [6,7,8]
-# ]
+matrix = [
+    [4,6,1],
+    [1,2,3],
+    [6,7,8]
+]
 #Exercise 15: Access Nested Lists
 # print(matrix[0][1])
 # print(matrix[1][2])
@@ -183,8 +183,8 @@ print(array)
 # print(matrix[2][2])
 #Exercise 16: Flatten Nested List in Python / converting nested list into single list
 # flatlist = []
-# flatlist = [x for subtile1 in matrix for x in subtile1]
-# print(flatlist)
+flatlist = [x for subtile1 in matrix for x in subtile1]
+print(flatlist)
 #Exercise 22: Extend nested list by adding the sublist
 matrix = [
     [4,6,1],
