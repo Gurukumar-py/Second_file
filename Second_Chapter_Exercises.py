@@ -45,7 +45,7 @@ import sys
 word1 = "listen"
 word2 = "silent"
 if len(word1) != len(word2):
-    print("Not an anagram")
+    #print("Not an anagram")
     sys.exit()
 #Sorting arranges the characters in alphabetical order. listen ↓ Sort eilnst (both word will be eilnst, compare)
 if sorted(word1) == sorted(word2):
@@ -67,7 +67,7 @@ def recursive_count(nested_list):
     return nested_listArr
 
 nested = [1, [2, 3], [4, [5, 6]], 7]
-print(recursive_count(nested))
+#print(recursive_count(nested))
 #flatlist = [x for subtile1 in matrix for x in subtile1]
 #print(flatten)
 #==================================================================================
@@ -78,10 +78,10 @@ print(recursive_count(nested))
 text = "Python is awesome"
 #result = []
 result = text.split()  # string to list conversation
-print(result) #['Python', 'is', 'awesome']
+#print(result) #['Python', 'is', 'awesome']
 #result = " ".join(result) #convert list to string
 result = " ".join(x[::-1] for x in result)
-print(result)
+#print(result)
 #=============================================================================
 #interview question
 x = 10
@@ -105,3 +105,27 @@ result = " ".join(result) #convert list to string
 #Given Input: "A man, a plan, a canal: Panama"
 #Expected Output: True
 data = "A man, a plan, a canal: Panama"
+def palindrome(sentence):
+    sentence = sentence.replace(" ","").replace(",","").replace(":","").lower()
+    #print(sentence)
+    return sentence[::-1] == sentence
+
+print(palindrome(data))
+#===================================================================================
+#Exercise 8: List Comprehension Filtering (Advanced)
+#Given a list of strings, use a single list comprehension to extract strings that meet two criteria: they must be longer than 5 characters AND they must start with a vowel (a, e, i, o, u).
+#Given Input: ["apple", "education", "ice", "ocean", "python", "umbrella"]
+#Expected Output: ['education', 'umbrella']
+Input = ["apple", "education", "ice", "ocean", "python", "umbrella"]
+output = [char for char in Input if len(char) > 5 and char[0].lower() in "aeiou"]
+#print(output) #['education', 'umbrella']
+#========================================================================================
+#Exercise 9: Remove Duplicates (Preserving Order)
+#Write a function that removes duplicate elements from a list. You cannot use set() because sets do not maintain the original order of elements.
+#Given Input: [1, 2, 2, 3, 1, 4, 2]
+#Expected Output: [1, 2, 3, 4]
+datalist =  [1, 4, 2, 2, 3, 1, 4, 2]
+#remDup = []
+remDup = list(dict.fromkeys(datalist))
+print(remDup)
+#using for loop
